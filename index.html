@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ekskluzywny sklep - szybkość i elegancja w każdym pikselu.">
+    <title>ModernShop | Premium Experience</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="container">
+            <div class="logo">Modern<span>Shop</span></div>
+            <ul class="nav-links">
+                <li><a href="#" class="nav-link active" data-target="products">Produkty</a></li>
+                <li><a href="#" class="nav-link" data-target="cart">Koszyk (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="products" class="view">
+            <h1 class="section-title">Nasza Kolekcja</h1>
+            <div class="product-grid" id="product-list">
+                </div>
+        </section>
+
+        <section id="cart" class="view hidden">
+            <h1 class="section-title">Twój Koszyk</h1>
+            <div class="cart-container">
+                <div id="cart-items">
+                    <p class="empty-msg">Twój koszyk jest pusty. Czas na zakupy!</p>
+                </div>
+                <div class="cart-summary">
+                    <p>Suma: <strong id="total-price">0.00 PLN</strong></p>
+                    <button class="btn btn-primary" id="go-to-checkout">Przejdź do podsumowania</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="checkout" class="view hidden">
+            <h1 class="section-title">Podsumowanie Zamówienia</h1>
+            <div class="checkout-card">
+                <div id="order-details">
+                    </div>
+                <hr>
+                <div class="checkout-footer">
+                    <button class="btn btn-secondary" data-target="cart">Wróć do koszyka</button>
+                    <button class="btn btn-success" id="confirm-order">Potwierdzam i kupuję</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
