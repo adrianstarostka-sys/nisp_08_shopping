@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ekskluzywny sklep - szybkość i elegancja w każdym pikselu.">
+    <title>Koszyk | ModernShop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="container">
+            <div class="logo">Modern<span>Shop</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Produkty</a></li>
+                <li><a href="koszyk.html" class="nav-link active">Koszyk (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="cart" class="view">
+            <h1 class="section-title">Twój Koszyk</h1>
+            <div class="cart-container">
+                <div id="cart-items">
+                    <p class="empty-msg">Twój koszyk jest pusty. Czas na zakupy!</p>
+                </div>
+                <div class="cart-summary">
+                    <p>Suma: <strong id="total-price">0.00 PLN</strong></p>
+                    <a href="zamowienie.html" class="btn btn-primary" id="go-to-checkout" style="display:inline-block; text-align:center; text-decoration:none;">Przejdź do podsumowania</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
